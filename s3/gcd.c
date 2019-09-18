@@ -11,7 +11,7 @@ int gcd(int a, int b)
     }
     else
     {
-        ans = gcd(b,a%b);
+        ans = gcd(b,a % b);
     }
     return ans;
 }
