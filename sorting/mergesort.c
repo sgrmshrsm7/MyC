@@ -1,3 +1,5 @@
+//Sorting an array using merge sort
+
 #include <stdio.h>
 
 void merge_self(int a[], int l, int m, int n, int c[])
