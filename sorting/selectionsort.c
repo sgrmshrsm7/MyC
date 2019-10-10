@@ -4,17 +4,19 @@
 
 int main()
 {
-        int a[5], i, j, temp, temp_pos, n;
-        n = 5;
-        printf("Enter n = 5 numbers for storing in array :\n");
+        int i, j, temp, temp_pos, n;
+        printf("Enter number of elements in the array : ");
+        scanf("%d", &n);
+        int a[n];
+        printf("Enter n = %d numbers for storing in array :\n", n);
         for (i = 0 ; i < n ; i++)
         {
-                scanf("%d",&a[i]);
+                scanf("%d", &a[i]);
         }
         printf("\nUnsorted array is : ");
         for (i = 0 ; i < n ; i++)
         {
-                printf("%d ",a[i]);
+                printf("%d ", a[i]);
         }
 
         //Sort starts here
@@ -40,7 +42,7 @@ int main()
         printf("\nSorted array is : ");
         for (i = 0 ; i < n ; i++)
         {
-                printf("%d ",a[i]);
+                printf("%d ", a[i]);
         }
         return 0;
 }
