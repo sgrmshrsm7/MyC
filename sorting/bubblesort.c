@@ -4,9 +4,11 @@
 
 int main()
 {
-        int a[5], i, j, temp, n;
-        n = 5;
-        printf("Enter n = 5 numbers for storing in array :\n");
+        int i, j, temp, n;
+        printf("Enter number of elements in the array : ");
+        scanf("%d", &n);
+        int a[n];
+        printf("Enter n = %d numbers for storing in array :\n", n);
         for (i = 0 ; i < n ; i++)
         {
                 scanf("%d",&a[i]);
