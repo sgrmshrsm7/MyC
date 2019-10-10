@@ -34,13 +34,23 @@ void quicksort(int a[], int lo, int hi)
 
 int main()
 {
-        int a[10], i;
-        printf("Enter 10 numbers for the array :\n");
-        for(i = 0;i < 10;i++)
-                scanf("%d", &a[i]);
-        quicksort(a, 0, 9);
-        printf("Sorted array is : ");
-        for(i = 0;i < 10;i++)
+        int n, i;
+        printf("Enter number of elements in the array : ");
+        scanf("%d", &n);
+        int a[n], c[n];
+        printf("Enter n = %d numbers for storing in array :\n", n);
+        for (i = 0 ; i < n ; i++)
+        {
+                scanf("%d",&a[i]);
+        }
+        printf("\nUnsorted array is : ");
+        for (i = 0 ; i < n ; i++)
+        {
+                printf("%d ",a[i]);
+        }
+        quicksort(a, 0, n-1);
+        printf("\nSorted array is : ");
+        for(i = 0;i < n;i++)
                 printf("%d ", a[i]);
         return 0;
 }
