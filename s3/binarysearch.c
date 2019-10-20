@@ -17,7 +17,7 @@ int main()
         scanf("%d", &num);
         hi = n - 1;
         lo = 0;
-        while(flag != 1 && hi > lo)
+        while(flag != 1 && hi >= lo)
         {
                 mid = (hi + lo) / 2;
                 if(a[mid] == num)
