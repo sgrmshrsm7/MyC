@@ -297,6 +297,8 @@ int main()
                         break;
                 case 5: heatislandintensity(A, n);
                         break;
+                case 6: printf("\nProgram Exiting...");
+                        break;
                 default: printf("Invalid question number!!!");
         }
         }
