@@ -2,12 +2,12 @@
 
 #include <stdio.h>
 
-void count(int n, int N)
+void count(int n)
 {
         if(n > 0)
         {
-                printf("%d ", N-n+1);
-                count(n - 1, N);
+                count(n - 1);
+                printf("%d ", n);
         }
 }
 
@@ -16,6 +16,6 @@ int main()
         int N;
         printf("Enter the value value of N : ");
         scanf("%d", &N);
-        count(N, N);
+        count(N);
         return 0;
 }
